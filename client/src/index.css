@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* MTA Color Variables */
+:root {
+  --mta-brown: #996633;
+  --mta-blue: #0039A6;
+  --mta-gray: #808183;
+  --mta-orange: #FF6319;
+  --mta-red: #EE352E;
+  --mta-yellow: #FCCC0A;
+  --mta-green: #00933C;
+  --mta-darkblue: #2A344D;
+  --mta-black: #000000;
+  --mta-lightgreen: #6CBE45;
+}

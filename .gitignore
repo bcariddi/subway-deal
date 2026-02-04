@@ -9,6 +9,7 @@ node_modules/
 *.dylib
 webserver
 cli
+multiplayer
 
 # Go test/build artifacts
 *.test
@@ -28,6 +29,12 @@ Thumbs.db
 
 # Output directories (card generation)
 output/
+
+# Client build output
+client/dist/
+
+# Environment files (local overrides)
+.env.local
 
 # Other stuff
 thoughts/
