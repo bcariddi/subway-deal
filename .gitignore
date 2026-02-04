@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+webserver
+cli
+
+# Go test/build artifacts
+*.test
+*.out
+coverage.txt
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output directories (card generation)
+output/
+
+# Other stuff
+thoughts/

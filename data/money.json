@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "id": "money_1m",
+      "type": "money",
+      "denomination": 1000000,
+      "displayValue": "$1M",
+      "theme": "Base Fare",
+      "quantity": 6
+    },
+    {
+      "id": "money_2m",
+      "type": "money",
+      "denomination": 2000000,
+      "displayValue": "$2M",
+      "theme": "Weekly Pass",
+      "quantity": 5
+    },
+    {
+      "id": "money_3m",
+      "type": "money",
+      "denomination": 3000000,
+      "displayValue": "$3M",
+      "theme": "Monthly Unlimited",
+      "quantity": 3
+    },
+    {
+      "id": "money_4m",
+      "type": "money",
+      "denomination": 4000000,
+      "displayValue": "$4M",
+      "theme": "Express Pass",
+      "quantity": 3
+    },
+    {
+      "id": "money_5m",
+      "type": "money",
+      "denomination": 5000000,
+      "displayValue": "$5M",
+      "theme": "Annual Pass",
+      "quantity": 2
+    },
+    {
+      "id": "money_10m",
+      "type": "money",
+      "denomination": 10000000,
+      "displayValue": "$10M",
+      "theme": "Unlimited MetroCard",
+      "quantity": 1
+    }
+  ]
+}

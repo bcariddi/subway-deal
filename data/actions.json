@@ -1,0 +1,104 @@
+{
+  "cards": [
+    {
+      "id": "action_swipe_in",
+      "type": "action",
+      "name": "Swipe In",
+      "mtaTheme": "Pass Go",
+      "effect": "Draw 2 extra cards",
+      "value": 1000000,
+      "quantity": 10,
+      "flavorText": "Tap your MetroCard and keep moving!"
+    },
+    {
+      "id": "action_fare_evasion",
+      "type": "action",
+      "name": "Fare Evasion",
+      "mtaTheme": "Just Say No",
+      "effect": "Cancel any action card played against you",
+      "value": 4000000,
+      "quantity": 3,
+      "flavorText": "Not today!"
+    },
+    {
+      "id": "action_power_broker",
+      "type": "action",
+      "name": "Power Broker",
+      "mtaTheme": "Sly Deal",
+      "effect": "Steal a property from any player (not from a complete set)",
+      "value": 3000000,
+      "quantity": 3,
+      "flavorText": "Robert Moses would be proud."
+    },
+    {
+      "id": "action_service_change",
+      "type": "action",
+      "name": "Service Change",
+      "mtaTheme": "Forced Deal",
+      "effect": "Swap one of your properties with another player's property (not from complete sets)",
+      "value": 3000000,
+      "quantity": 3,
+      "flavorText": "Due to construction, your train has been rerouted."
+    },
+    {
+      "id": "action_line_closure",
+      "type": "action",
+      "name": "Line Closure",
+      "mtaTheme": "Deal Breaker",
+      "effect": "Steal a complete property set from any player (includes buildings)",
+      "value": 5000000,
+      "quantity": 2,
+      "flavorText": "This line is now out of service."
+    },
+    {
+      "id": "action_missed_train",
+      "type": "action",
+      "name": "Missed Your Train",
+      "mtaTheme": "Debt Collector",
+      "effect": "Force any player to pay you $5M",
+      "value": 3000000,
+      "quantity": 3,
+      "flavorText": "The doors are closing!"
+    },
+    {
+      "id": "action_my_stop",
+      "type": "action",
+      "name": "It's My Stop!",
+      "mtaTheme": "It's My Birthday",
+      "effect": "All players pay you $2M",
+      "value": 2000000,
+      "quantity": 3,
+      "flavorText": "Excuse me, coming through!"
+    },
+    {
+      "id": "action_rush_hour",
+      "type": "action",
+      "name": "Rush Hour",
+      "mtaTheme": "Double the Rent",
+      "effect": "Play with a rent card to double the rent amount",
+      "value": 1000000,
+      "quantity": 2,
+      "flavorText": "Peak hours mean peak prices."
+    },
+    {
+      "id": "action_express_service",
+      "type": "action",
+      "name": "Express Service",
+      "mtaTheme": "House",
+      "effect": "Add to a complete set to add $3M to rent (not on Railroads/Utilities)",
+      "value": 3000000,
+      "quantity": 3,
+      "flavorText": "This train is now running express."
+    },
+    {
+      "id": "action_new_station",
+      "type": "action",
+      "name": "New Station",
+      "mtaTheme": "Hotel",
+      "effect": "Add to a complete set with Express Service to add $4M to rent",
+      "value": 4000000,
+      "quantity": 2,
+      "flavorText": "The Second Avenue Subway is finally here!"
+    }
+  ]
+}

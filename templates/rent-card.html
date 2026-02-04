@@ -1,0 +1,24 @@
+<div class="card rent-card">
+  {{#if (eq (lookup colorHexes 0) "#FFFFFF")}}
+  <div class="color-bar multicolor-bar"></div>
+  {{else}}
+  <div class="color-bar" style="background: linear-gradient(90deg, {{lookup colorHexes 0}} 0%, {{lookup colorHexes 0}} 50%, {{lookup colorHexes 1}} 50%, {{lookup colorHexes 1}} 100%);"></div>
+  {{/if}}
+  <div class="card-name">{{name}}</div>
+  {{#if (eq (lookup colorHexes 0) "#FFFFFF")}}
+  <div class="card-subtitle">Any Color</div>
+  {{else}}
+  <div class="card-subtitle">{{lookup colorNames 0}} / {{lookup colorNames 1}}</div>
+  {{/if}}
+  <div class="rent-info">
+    {{#if (eq target "all")}}
+    All players pay rent based on your properties in this color
+    {{else}}
+    Choose one player to pay rent based on your properties
+    {{/if}}
+  </div>
+  <div class="card-footer">
+    <span></span>
+    <span class="card-value">{{formatMoney value}}</span>
+  </div>
+</div>

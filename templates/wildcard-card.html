@@ -1,0 +1,16 @@
+<div class="card wildcard-card">
+  {{#if (eq (lookup colorHexes 0) "#FFFFFF")}}
+  <div class="color-bar multicolor-bar"></div>
+  {{else}}
+  <div class="color-bar" style="background: linear-gradient(90deg, {{lookup colorHexes 0}} 0%, {{lookup colorHexes 0}} 50%, {{lookup colorHexes 1}} 50%, {{lookup colorHexes 1}} 100%);"></div>
+  {{/if}}
+  <div class="card-name">{{name}}</div>
+  <div class="wildcard-icon">&#9733;</div>
+  <div class="description">
+    {{description}}
+  </div>
+  <div class="card-footer">
+    <span style="font-size: 28px; color: #666;">WILDCARD</span>
+    <span class="card-value">{{formatMoney value}}</span>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "subway-deal",
+  "version": "1.0.0",
+  "description": "MTA-themed card game generator",
+  "type": "module",
+  "scripts": {
+    "generate-cards": "node scripts/generate-cards.js",
+    "create-pdf": "node scripts/create-pdf.js",
+    "dev": "node scripts/generate-cards.js --watch"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0",
+    "pdfkit": "^0.15.0",
+    "handlebars": "^4.7.8",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

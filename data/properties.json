@@ -1,0 +1,450 @@
+{
+  "cards": [
+    {
+      "id": "prop_j",
+      "type": "property",
+      "name": "J",
+      "subtitle": "Jamaica Line",
+      "color": "brown",
+      "colorHex": "#996633",
+      "setSize": 2,
+      "position": 1,
+      "value": 1000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000
+      }
+    },
+    {
+      "id": "prop_z",
+      "type": "property",
+      "name": "Z",
+      "subtitle": "Jamaica Express",
+      "color": "brown",
+      "colorHex": "#996633",
+      "setSize": 2,
+      "position": 2,
+      "value": 1000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000
+      }
+    },
+    {
+      "id": "prop_a",
+      "type": "property",
+      "name": "A",
+      "subtitle": "8th Ave Express",
+      "color": "blue",
+      "colorHex": "#0039A6",
+      "setSize": 3,
+      "position": 1,
+      "value": 1000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000
+      }
+    },
+    {
+      "id": "prop_c",
+      "type": "property",
+      "name": "C",
+      "subtitle": "8th Ave Local",
+      "color": "blue",
+      "colorHex": "#0039A6",
+      "setSize": 3,
+      "position": 2,
+      "value": 1000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000
+      }
+    },
+    {
+      "id": "prop_e",
+      "type": "property",
+      "name": "E",
+      "subtitle": "8th Ave Local",
+      "color": "blue",
+      "colorHex": "#0039A6",
+      "setSize": 3,
+      "position": 3,
+      "value": 1000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000
+      }
+    },
+    {
+      "id": "prop_42nd_shuttle",
+      "type": "property",
+      "name": "S",
+      "subtitle": "42nd St Shuttle",
+      "color": "gray",
+      "colorHex": "#808183",
+      "setSize": 3,
+      "position": 1,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 4000000
+      }
+    },
+    {
+      "id": "prop_franklin_shuttle",
+      "type": "property",
+      "name": "S",
+      "subtitle": "Franklin Ave Shuttle",
+      "color": "gray",
+      "colorHex": "#808183",
+      "setSize": 3,
+      "position": 2,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 4000000
+      }
+    },
+    {
+      "id": "prop_rockaway_shuttle",
+      "type": "property",
+      "name": "S",
+      "subtitle": "Rockaway Park Shuttle",
+      "color": "gray",
+      "colorHex": "#808183",
+      "setSize": 3,
+      "position": 3,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 4000000
+      }
+    },
+    {
+      "id": "prop_b",
+      "type": "property",
+      "name": "B",
+      "subtitle": "6th Ave Express",
+      "color": "orange",
+      "colorHex": "#FF6319",
+      "setSize": 3,
+      "position": 1,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 3000000,
+        "3": 5000000
+      }
+    },
+    {
+      "id": "prop_d",
+      "type": "property",
+      "name": "D",
+      "subtitle": "6th Ave Express",
+      "color": "orange",
+      "colorHex": "#FF6319",
+      "setSize": 3,
+      "position": 2,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 3000000,
+        "3": 5000000
+      }
+    },
+    {
+      "id": "prop_f",
+      "type": "property",
+      "name": "F",
+      "subtitle": "6th Ave Local",
+      "color": "orange",
+      "colorHex": "#FF6319",
+      "setSize": 3,
+      "position": 3,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 3000000,
+        "3": 5000000
+      }
+    },
+    {
+      "id": "prop_1",
+      "type": "property",
+      "name": "1",
+      "subtitle": "7th Ave Local",
+      "color": "red",
+      "colorHex": "#EE352E",
+      "setSize": 3,
+      "position": 1,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 3000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_2",
+      "type": "property",
+      "name": "2",
+      "subtitle": "7th Ave Express",
+      "color": "red",
+      "colorHex": "#EE352E",
+      "setSize": 3,
+      "position": 2,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 3000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_3",
+      "type": "property",
+      "name": "3",
+      "subtitle": "7th Ave Express",
+      "color": "red",
+      "colorHex": "#EE352E",
+      "setSize": 3,
+      "position": 3,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 3000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_n",
+      "type": "property",
+      "name": "N",
+      "subtitle": "Broadway Express",
+      "color": "yellow",
+      "colorHex": "#FCCC0A",
+      "setSize": 3,
+      "position": 1,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_q",
+      "type": "property",
+      "name": "Q",
+      "subtitle": "Broadway Express",
+      "color": "yellow",
+      "colorHex": "#FCCC0A",
+      "setSize": 3,
+      "position": 2,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_r",
+      "type": "property",
+      "name": "R",
+      "subtitle": "Broadway Local",
+      "color": "yellow",
+      "colorHex": "#FCCC0A",
+      "setSize": 3,
+      "position": 3,
+      "value": 3000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 6000000
+      }
+    },
+    {
+      "id": "prop_penn_station",
+      "type": "property",
+      "name": "Penn Station",
+      "subtitle": "Major Hub",
+      "color": "green",
+      "colorHex": "#00933C",
+      "setSize": 3,
+      "position": 1,
+      "value": 4000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 7000000
+      }
+    },
+    {
+      "id": "prop_grand_central",
+      "type": "property",
+      "name": "Grand Central",
+      "subtitle": "Major Hub",
+      "color": "green",
+      "colorHex": "#00933C",
+      "setSize": 3,
+      "position": 2,
+      "value": 4000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 7000000
+      }
+    },
+    {
+      "id": "prop_atlantic_terminal",
+      "type": "property",
+      "name": "Atlantic Terminal",
+      "subtitle": "Major Hub",
+      "color": "green",
+      "colorHex": "#00933C",
+      "setSize": 3,
+      "position": 3,
+      "value": 4000000,
+      "rent": {
+        "1": 2000000,
+        "2": 4000000,
+        "3": 7000000
+      }
+    },
+    {
+      "id": "prop_citi_field",
+      "type": "property",
+      "name": "Citi Field",
+      "subtitle": "Mets Stadium",
+      "color": "darkblue",
+      "colorHex": "#2A344D",
+      "setSize": 2,
+      "position": 1,
+      "value": 4000000,
+      "rent": {
+        "1": 3000000,
+        "2": 8000000
+      }
+    },
+    {
+      "id": "prop_yankee_stadium",
+      "type": "property",
+      "name": "Yankee Stadium",
+      "subtitle": "Yankees Stadium",
+      "color": "darkblue",
+      "colorHex": "#2A344D",
+      "setSize": 2,
+      "position": 2,
+      "value": 4000000,
+      "rent": {
+        "1": 3000000,
+        "2": 8000000
+      }
+    },
+    {
+      "id": "prop_lirr",
+      "type": "property",
+      "name": "LIRR",
+      "subtitle": "Long Island Rail Road",
+      "color": "black",
+      "colorHex": "#000000",
+      "setSize": 4,
+      "position": 1,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000,
+        "4": 4000000
+      }
+    },
+    {
+      "id": "prop_metro_north",
+      "type": "property",
+      "name": "Metro-North",
+      "subtitle": "Metro-North Railroad",
+      "color": "black",
+      "colorHex": "#000000",
+      "setSize": 4,
+      "position": 2,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000,
+        "4": 4000000
+      }
+    },
+    {
+      "id": "prop_nj_transit",
+      "type": "property",
+      "name": "NJ Transit",
+      "subtitle": "New Jersey Transit",
+      "color": "black",
+      "colorHex": "#000000",
+      "setSize": 4,
+      "position": 3,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000,
+        "4": 4000000
+      }
+    },
+    {
+      "id": "prop_path",
+      "type": "property",
+      "name": "PATH",
+      "subtitle": "Port Authority Trans-Hudson",
+      "color": "black",
+      "colorHex": "#000000",
+      "setSize": 4,
+      "position": 4,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000,
+        "3": 3000000,
+        "4": 4000000
+      }
+    },
+    {
+      "id": "prop_g",
+      "type": "property",
+      "name": "G",
+      "subtitle": "Brooklyn-Queens Crosstown",
+      "color": "lightgreen",
+      "colorHex": "#6CBE45",
+      "setSize": 2,
+      "position": 1,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000
+      }
+    },
+    {
+      "id": "prop_l",
+      "type": "property",
+      "name": "L",
+      "subtitle": "14th St-Canarsie Local",
+      "color": "lightgreen",
+      "colorHex": "#6CBE45",
+      "setSize": 2,
+      "position": 2,
+      "value": 2000000,
+      "rent": {
+        "1": 1000000,
+        "2": 2000000
+      }
+    }
+  ]
+}

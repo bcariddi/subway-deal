@@ -1,0 +1,18 @@
+<div class="card property-card">
+  <div class="color-bar" style="background-color: {{colorHex}};"></div>
+  <div class="card-name">{{name}}</div>
+  <div class="card-subtitle">{{subtitle}}</div>
+  <div class="rent-table">
+    <div class="rent-header">RENT</div>
+    {{#each rent}}
+    <div class="rent-row">
+      <span>{{@key}} {{#if (eq @key "1")}}line{{else}}lines{{/if}}</span>
+      <span>{{formatMoney this}}</span>
+    </div>
+    {{/each}}
+  </div>
+  <div class="card-footer">
+    <span class="set-indicator">{{position}} of {{setSize}}</span>
+    <span class="card-value">{{formatMoney value}}</span>
+  </div>
+</div>

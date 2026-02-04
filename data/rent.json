@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "id": "rent_blue_brown",
+      "type": "rent",
+      "name": "Rent",
+      "colors": ["blue", "brown"],
+      "colorNames": ["Light Blue (A/C/E)", "Brown (J/Z)"],
+      "colorHexes": ["#0039A6", "#996633"],
+      "value": 1000000,
+      "target": "all",
+      "quantity": 2
+    },
+    {
+      "id": "rent_gray_orange",
+      "type": "rent",
+      "name": "Rent",
+      "colors": ["gray", "orange"],
+      "colorNames": ["Pink (Shuttles)", "Orange (B/D/F)"],
+      "colorHexes": ["#808183", "#FF6319"],
+      "value": 1000000,
+      "target": "all",
+      "quantity": 2
+    },
+    {
+      "id": "rent_red_yellow",
+      "type": "rent",
+      "name": "Rent",
+      "colors": ["red", "yellow"],
+      "colorNames": ["Red (1/2/3)", "Yellow (N/Q/R)"],
+      "colorHexes": ["#EE352E", "#FCCC0A"],
+      "value": 1000000,
+      "target": "all",
+      "quantity": 2
+    },
+    {
+      "id": "rent_darkblue_green",
+      "type": "rent",
+      "name": "Rent",
+      "colors": ["darkblue", "green"],
+      "colorNames": ["Dark Blue (Stadiums)", "Green (Hubs)"],
+      "colorHexes": ["#2A344D", "#00933C"],
+      "value": 1000000,
+      "target": "all",
+      "quantity": 2
+    },
+    {
+      "id": "rent_railroad_utility",
+      "type": "rent",
+      "name": "Rent",
+      "colors": ["black", "lightgreen"],
+      "colorNames": ["Railroad", "Utilities (G/L)"],
+      "colorHexes": ["#000000", "#6CBE45"],
+      "value": 1000000,
+      "target": "all",
+      "quantity": 2
+    },
+    {
+      "id": "rent_wild",
+      "type": "rent",
+      "name": "Wild Rent",
+      "colors": ["any"],
+      "colorNames": ["Any Color"],
+      "colorHexes": ["#FFFFFF"],
+      "value": 3000000,
+      "target": "one",
+      "quantity": 3
+    }
+  ]
+}

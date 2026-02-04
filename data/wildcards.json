@@ -1,0 +1,114 @@
+{
+  "cards": [
+    {
+      "id": "wild_broadway_junction",
+      "type": "wildcard",
+      "name": "Broadway Junction",
+      "colors": ["blue", "brown"],
+      "colorNames": ["Light Blue (A/C/E)", "Brown (J/Z)"],
+      "colorHexes": ["#0039A6", "#996633"],
+      "value": 1000000,
+      "description": "Can be used as Light Blue (A/C/E) or Brown (J/Z)"
+    },
+    {
+      "id": "wild_jamaica_station",
+      "type": "wildcard",
+      "name": "Jamaica Station",
+      "colors": ["blue", "black"],
+      "colorNames": ["Light Blue (A/C/E)", "Railroad"],
+      "colorHexes": ["#0039A6", "#000000"],
+      "value": 4000000,
+      "description": "Can be used as Light Blue (A/C/E) or Railroad"
+    },
+    {
+      "id": "wild_service_advisory_1",
+      "type": "wildcard",
+      "name": "Service Advisory",
+      "colors": ["gray", "orange"],
+      "colorNames": ["Pink (Shuttles)", "Orange (B/D/F)"],
+      "colorHexes": ["#808183", "#FF6319"],
+      "value": 2000000,
+      "description": "Can be used as Pink (Shuttles) or Orange (B/D/F)"
+    },
+    {
+      "id": "wild_service_advisory_2",
+      "type": "wildcard",
+      "name": "Service Advisory",
+      "colors": ["gray", "orange"],
+      "colorNames": ["Pink (Shuttles)", "Orange (B/D/F)"],
+      "colorHexes": ["#808183", "#FF6319"],
+      "value": 2000000,
+      "description": "Can be used as Pink (Shuttles) or Orange (B/D/F)"
+    },
+    {
+      "id": "wild_times_square_1",
+      "type": "wildcard",
+      "name": "Times Square",
+      "colors": ["red", "yellow"],
+      "colorNames": ["Red (1/2/3)", "Yellow (N/Q/R)"],
+      "colorHexes": ["#EE352E", "#FCCC0A"],
+      "value": 3000000,
+      "description": "Can be used as Red (1/2/3) or Yellow (N/Q/R)"
+    },
+    {
+      "id": "wild_times_square_2",
+      "type": "wildcard",
+      "name": "Times Square",
+      "colors": ["red", "yellow"],
+      "colorNames": ["Red (1/2/3)", "Yellow (N/Q/R)"],
+      "colorHexes": ["#EE352E", "#FCCC0A"],
+      "value": 3000000,
+      "description": "Can be used as Red (1/2/3) or Yellow (N/Q/R)"
+    },
+    {
+      "id": "wild_big_game",
+      "type": "wildcard",
+      "name": "Big Game",
+      "colors": ["darkblue", "green"],
+      "colorNames": ["Dark Blue (Stadiums)", "Green (Hubs)"],
+      "colorHexes": ["#2A344D", "#00933C"],
+      "value": 4000000,
+      "description": "Can be used as Dark Blue (Stadiums) or Green (Hubs)"
+    },
+    {
+      "id": "wild_grand_central",
+      "type": "wildcard",
+      "name": "Grand Central Connection",
+      "colors": ["green", "black"],
+      "colorNames": ["Green (Hubs)", "Railroad"],
+      "colorHexes": ["#00933C", "#000000"],
+      "value": 4000000,
+      "description": "Can be used as Green (Hubs) or Railroad"
+    },
+    {
+      "id": "wild_weekend_service",
+      "type": "wildcard",
+      "name": "Weekend Service",
+      "colors": ["lightgreen", "black"],
+      "colorNames": ["Utilities (G/L)", "Railroad"],
+      "colorHexes": ["#6CBE45", "#000000"],
+      "value": 2000000,
+      "description": "Can be used as Utilities (G/L) or Railroad"
+    },
+    {
+      "id": "wild_fulton_center_1",
+      "type": "wildcard",
+      "name": "Fulton Center",
+      "colors": ["any"],
+      "colorNames": ["Any Color"],
+      "colorHexes": ["#FFFFFF"],
+      "value": 0,
+      "description": "Can be used as any property color. No cash value."
+    },
+    {
+      "id": "wild_fulton_center_2",
+      "type": "wildcard",
+      "name": "Fulton Center",
+      "colors": ["any"],
+      "colorNames": ["Any Color"],
+      "colorHexes": ["#FFFFFF"],
+      "value": 0,
+      "description": "Can be used as any property color. No cash value."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<div class="card action-card">
+  <div class="color-bar"></div>
+  <div class="card-name">{{name}}</div>
+  <div class="card-subtitle">{{mtaTheme}}</div>
+  <div class="action-effect">
+    {{effect}}
+  </div>
+  {{#if flavorText}}
+  <div class="flavor-text">
+    "{{flavorText}}"
+  </div>
+  {{/if}}
+  <div class="card-footer">
+    <span></span>
+    <span class="card-value">{{formatMoney value}}</span>
+  </div>
+</div>

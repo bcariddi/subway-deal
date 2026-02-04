@@ -1,0 +1,654 @@
+/* MTA Color Variables */
+:root {
+    --mta-brown: #996633;
+    --mta-blue: #0039A6;
+    --mta-gray: #808183;
+    --mta-orange: #FF6319;
+    --mta-red: #EE352E;
+    --mta-yellow: #FCCC0A;
+    --mta-green: #00933C;
+    --mta-darkblue: #2A344D;
+    --mta-black: #000000;
+    --mta-lightgreen: #6CBE45;
+
+    --bg-dark: #1a1a2e;
+    --bg-card: #16213e;
+    --bg-hover: #1f3460;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --border-color: #2a2a4a;
+}
+
+/* Color mapping for property sets */
+.color-brown { --set-color: var(--mta-brown); }
+.color-blue { --set-color: var(--mta-blue); }
+.color-gray, .color-pink { --set-color: var(--mta-gray); }
+.color-orange { --set-color: var(--mta-orange); }
+.color-red { --set-color: var(--mta-red); }
+.color-yellow { --set-color: var(--mta-yellow); }
+.color-green { --set-color: var(--mta-green); }
+.color-darkblue { --set-color: var(--mta-darkblue); }
+.color-railroad, .color-black { --set-color: var(--mta-black); }
+.color-utility, .color-lightgreen { --set-color: var(--mta-lightgreen); }
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+/* Screens */
+.screen {
+    display: none;
+    min-height: 100vh;
+}
+
+.screen.active {
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Setup Screen */
+#setup-screen.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#setup-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--mta-blue), var(--mta-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.setup-form {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.setup-form h2 {
+    margin-bottom: 1.5rem;
+}
+
+#player-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.player-name {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.player-name:focus {
+    outline: none;
+    border-color: var(--mta-blue);
+}
+
+.hint {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--mta-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #004dc9;
+}
+
+.btn-secondary {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background: #2a4a7a;
+}
+
+.btn-danger {
+    background: var(--mta-red);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #d42d28;
+}
+
+.btn-success {
+    background: var(--mta-green);
+    color: white;
+}
+
+.btn-success:hover {
+    background: #007a32;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Game Header */
+.game-header {
+    background: var(--bg-card);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.game-header h1 {
+    font-size: 1.5rem;
+}
+
+#turn-indicator {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--mta-green);
+}
+
+#actions-remaining {
+    color: var(--text-secondary);
+}
+
+/* Game Layout */
+.game-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: calc(100vh - 60px);
+}
+
+/* Other Players Sidebar */
+.other-players {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+}
+
+.other-players h2 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.opponent-card {
+    background: var(--bg-dark);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.opponent-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.opponent-stats {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.opponent-properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.property-pip {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--set-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.property-pip.complete {
+    box-shadow: 0 0 0 2px var(--mta-green), 0 0 8px var(--mta-green);
+}
+
+/* Current Player Area */
+.current-player {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.player-info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.player-info-bar h2 {
+    font-size: 1.5rem;
+}
+
+#current-player-stats {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-secondary);
+}
+
+#current-player-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Properties Section */
+.properties-section {
+    margin-bottom: 2rem;
+}
+
+.properties-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+#current-player-properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.property-set {
+    background: var(--bg-card);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 160px;
+    border-left: 4px solid var(--set-color);
+}
+
+.property-set.complete {
+    border: 2px solid var(--mta-green);
+    border-left: 4px solid var(--set-color);
+}
+
+.property-set-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.property-set-name {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.property-set-count {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.property-set-cards {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.property-set-rent {
+    color: var(--mta-green);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.property-set-improvements {
+    font-size: 0.75rem;
+    color: var(--mta-orange);
+    margin-top: 0.25rem;
+}
+
+.no-properties {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Hand Section */
+.hand-section {
+    margin-bottom: 1.5rem;
+}
+
+.hand-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+#hand-count {
+    font-weight: normal;
+    color: var(--text-primary);
+}
+
+#current-player-hand {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+}
+
+/* Card Styles */
+.card {
+    background: var(--bg-card);
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    border-color: var(--mta-blue);
+    transform: translateY(-2px);
+}
+
+.card.selected {
+    border-color: var(--mta-green);
+    box-shadow: 0 0 0 2px var(--mta-green);
+}
+
+.card-color-bar {
+    height: 6px;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    background: var(--set-color, var(--border-color));
+}
+
+/* Dual-color wildcard gradient */
+.card-color-bar.dual-color {
+    background: linear-gradient(90deg, var(--color-1) 50%, var(--color-2) 50%);
+}
+
+/* Rainbow for "any color" wildcards */
+.card-color-bar.any-color {
+    background: linear-gradient(90deg,
+        var(--mta-brown) 0%,
+        var(--mta-blue) 12%,
+        var(--mta-orange) 24%,
+        var(--mta-red) 36%,
+        var(--mta-yellow) 48%,
+        var(--mta-green) 60%,
+        var(--mta-darkblue) 72%,
+        var(--mta-black) 84%,
+        var(--mta-lightgreen) 100%
+    );
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-type {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+}
+
+.card-effect {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.card-value {
+    font-size: 0.8rem;
+    color: var(--mta-green);
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.card-actions .btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+}
+
+#modal-body {
+    margin-bottom: 1.5rem;
+}
+
+/* Overlay (Response Phase) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay-content {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid var(--mta-red);
+}
+
+.overlay-content h2 {
+    color: var(--mta-red);
+    margin-bottom: 1rem;
+}
+
+.overlay-content p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+#response-info {
+    background: var(--bg-dark);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#response-info strong {
+    color: var(--text-primary);
+}
+
+/* Game Over */
+#gameover-screen.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameover-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#winner-name {
+    font-size: 2rem;
+    color: var(--mta-green);
+    margin-bottom: 0.5rem;
+}
+
+/* Utilities */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .other-players {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        max-height: 200px;
+    }
+
+    #other-players-list {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .opponent-card {
+        min-width: 200px;
+        margin-bottom: 0;
+    }
+
+    #current-player-hand {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .game-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .player-info-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    #current-player-stats {
+        justify-content: center;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+
+    #current-player-hand {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

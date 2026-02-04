@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Deal - NYC Transit Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Setup Screen -->
+        <div id="setup-screen" class="screen active">
+            <div class="container">
+                <h1>Subway Deal</h1>
+                <p class="subtitle">NYC Transit Card Game</p>
+
+                <div class="setup-form">
+                    <h2>Enter Player Names</h2>
+                    <div id="player-inputs">
+                        <input type="text" class="player-name" placeholder="Player 1" data-index="0">
+                        <input type="text" class="player-name" placeholder="Player 2" data-index="1">
+                    </div>
+                    <div class="button-row">
+                        <button id="add-player-btn" class="btn btn-secondary">+ Add Player</button>
+                        <button id="start-game-btn" class="btn btn-primary">Start Game</button>
+                    </div>
+                    <p class="hint">2-5 players. First to complete 3 property sets wins!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <header class="game-header">
+                <h1>Subway Deal</h1>
+                <div id="turn-indicator"></div>
+                <div id="actions-remaining"></div>
+            </header>
+
+            <!-- Response Phase Overlay -->
+            <div id="response-overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2 id="response-title"></h2>
+                    <p id="response-description"></p>
+                    <div id="response-info"></div>
+                    <div class="button-row">
+                        <button id="accept-btn" class="btn btn-danger">Accept</button>
+                        <button id="fare-evasion-btn" class="btn btn-primary">Play Fare Evasion</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Game Area -->
+            <div class="game-layout">
+                <!-- Other Players -->
+                <section id="other-players" class="other-players">
+                    <h2>Other Players</h2>
+                    <div id="other-players-list"></div>
+                </section>
+
+                <!-- Current Player Area -->
+                <section id="current-player-area" class="current-player">
+                    <div class="player-info-bar">
+                        <h2 id="current-player-name"></h2>
+                        <div id="current-player-stats"></div>
+                    </div>
+
+                    <!-- Properties -->
+                    <div class="properties-section">
+                        <h3>Your Properties</h3>
+                        <div id="current-player-properties"></div>
+                    </div>
+
+                    <!-- Hand -->
+                    <div class="hand-section">
+                        <h3>Your Hand <span id="hand-count"></span></h3>
+                        <div id="current-player-hand"></div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div id="action-buttons" class="action-buttons">
+                        <button id="end-turn-btn" class="btn btn-danger">End Turn</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Card Action Modal -->
+            <div id="card-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h3 id="modal-title"></h3>
+                    <div id="modal-body"></div>
+                    <div class="button-row">
+                        <button id="modal-cancel" class="btn btn-secondary">Cancel</button>
+                        <button id="modal-confirm" class="btn btn-primary">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameover-screen" class="screen">
+            <div class="container">
+                <h1>Game Over!</h1>
+                <h2 id="winner-name"></h2>
+                <p>completed 3 property sets!</p>
+                <button id="new-game-btn" class="btn btn-primary">New Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
